@@ -3192,7 +3192,8 @@
       "name": "Produtos relacionados",
       "settings": {
         "heading": {
-          "label": "Título"
+          "label": "Título",
+          "default": "Também poderá gostar de"
         },
         "products_to_show": {
           "label": "Número de produtos"

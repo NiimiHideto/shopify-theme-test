@@ -3192,7 +3192,8 @@
       "name": "Alakalı ürünler",
       "settings": {
         "heading": {
-          "label": "Başlık"
+          "label": "Başlık",
+          "default": "Şu ürünler de hoşunuza gidebilir:"
         },
         "products_to_show": {
           "label": "Ürün sayısı"

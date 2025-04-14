@@ -9,57 +9,53 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "hero-slideshow": {
+      "type": "slideshow",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "slide-0": {
+          "type": "slide",
           "settings": {
-            "heading": "開発用のストア",
-            "heading_size": "h0"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "image": "shopify://shop_images/palm-trees-sky.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "開発用テーマ",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "ボタンのラベル",
+            "link": "shopify://collections",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "slide-0"
       ],
       "settings": {
-        "image": "shopify://shop_images/palm-trees-sky.jpg",
-        "image_overlay_opacity": 40,
-        "image_height": "small",
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
         "image_behavior": "none",
-        "desktop_content_position": "bottom-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "scheme-3",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "center",
-        "show_text_below": false
+        "show_text_below": true,
+        "accessibility_info": "ブランドについてのスライドショー"
       }
     },
-    "featured_collection": {
+    "all-products": {
       "type": "featured-collection",
       "settings": {
         "collection": "all",
-        "products_to_show": 8,
-        "title": "Featured products",
+        "products_to_show": 24,
+        "title": "特集コレクション",
         "heading_size": "h2",
         "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
+        "show_description": true,
+        "description_style": "subtitle",
+        "columns_desktop": 6,
         "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
@@ -73,13 +69,77 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 44,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "blocks": {
+        "collection-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-0",
+        "collection-1",
+        "collection-2",
+        "collection-3"
+      ],
+      "settings": {
+        "title": "コレクション",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "image-banner": {
+      "type": "image-banner",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "top-left",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
       }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "hero-slideshow",
+    "all-products",
+    "collection-list",
+    "image-banner"
   ]
 }

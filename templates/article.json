@@ -27,9 +27,7 @@
         },
         "share": {
           "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
+          "settings": {}
         },
         "content": {
           "type": "content",
