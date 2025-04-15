@@ -79,13 +79,13 @@
         "collection-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "コレクションその１"
           }
         },
         "collection-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "コレクションその２"
           }
         },
         "collection-2": {
