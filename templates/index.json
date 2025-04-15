@@ -29,10 +29,28 @@
             "text_alignment_mobile": "center",
             "color_scheme": "scheme-1"
           }
+        },
+        "slide_npFEz3": {
+          "type": "slide",
+          "settings": {
+            "image_overlay_opacity": 0,
+            "heading": "画像スライドですよ",
+            "heading_size": "h1",
+            "subheading": "ブランドのストーリーを画像で伝える",
+            "button_label": "ボタンのラベル",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
         }
       },
       "block_order": [
-        "slide-0"
+        "slide-0",
+        "slide_npFEz3"
       ],
       "settings": {
         "layout": "full_bleed",
