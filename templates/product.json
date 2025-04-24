@@ -22,18 +22,15 @@
         },
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant-picker": {
           "type": "variant_picker",
@@ -44,8 +41,7 @@
         },
         "quantity-selector": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -80,13 +76,37 @@
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "stacked",
+        "mobile_thumbnails": "show",
         "media_position": "left",
         "image_zoom": "lightbox",
-        "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "174486269715e01d60": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "335391868733825913": {
+      "type": "apps",
+      "blocks": {
+        "87b33d13-f064-46e7-983c-c0fe757ce5c0": {
+          "type": "shopify://apps/dadao-product-reviews/blocks/product-reviews/3cc4253a-05eb-4164-8778-b76d83ce00cc",
+          "settings": {
+            "product": "{{product}}",
+            "show_sample_reviews": true
+          }
+        }
+      },
+      "block_order": [
+        "87b33d13-f064-46e7-983c-c0fe757ce5c0"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "collapsible-content": {
@@ -95,6 +115,7 @@
         "collapsible-row-0": {
           "type": "collapsible_row",
           "settings": {
+            "heading": "折りたたみ可能な行",
             "icon": "none",
             "row_content": "",
             "page": ""
@@ -103,6 +124,7 @@
         "collapsible-row-1": {
           "type": "collapsible_row",
           "settings": {
+            "heading": "折りたたみ可能な行",
             "icon": "none",
             "row_content": "",
             "page": ""
@@ -111,6 +133,7 @@
         "collapsible-row-2": {
           "type": "collapsible_row",
           "settings": {
+            "heading": "折りたたみ可能な行",
             "icon": "none",
             "row_content": "",
             "page": ""
@@ -124,11 +147,12 @@
       ],
       "settings": {
         "caption": "",
+        "heading": "折りたたみ可能なコンテンツ",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "section",
-        "color_scheme": "scheme-1",
         "container_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
         "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
@@ -139,24 +163,45 @@
     "related-products": {
       "type": "related-products",
       "settings": {
+        "heading": "おすすめ",
         "heading_size": "h2",
         "products_to_show": 4,
         "columns_desktop": 4,
+        "columns_mobile": "2",
         "color_scheme": "scheme-1",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 28
+      }
+    },
+    "801950227512851579": {
+      "type": "apps",
+      "blocks": {
+        "7071e7dd-4c62-4e0f-94f6-f118349ecde1": {
+          "type": "shopify://apps/dadao-product-reviews/blocks/featured-reviews/3cc4253a-05eb-4164-8778-b76d83ce00cc",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "7071e7dd-4c62-4e0f-94f6-f118349ecde1"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
       }
     }
   },
   "order": [
     "main",
+    "174486269715e01d60",
+    "335391868733825913",
     "collapsible-content",
-    "related-products"
+    "related-products",
+    "801950227512851579"
   ]
 }

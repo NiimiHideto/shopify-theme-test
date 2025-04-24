@@ -9,38 +9,56 @@
  */
 {
   "sections": {
-    "banner": {
-      "type": "main-collection-banner",
-      "disabled": true,
-      "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "scheme-1"
-      }
-    },
     "product-grid": {
-      "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
         "quick_add": "none",
         "enable_filtering": true,
-        "filter_type": "vertical",
-        "enable_sorting": false,
-        "columns_mobile": "2",
         "padding_top": 36,
-        "padding_bottom": 36
-      }
+        "image_shape": "default",
+        "enable_sorting": false,
+        "show_rating": false,
+        "show_vendor": false,
+        "filter_type": "vertical",
+        "show_secondary_image": false,
+        "image_ratio": "adapt",
+        "products_per_page": 16,
+        "color_scheme": "scheme-1",
+        "padding_bottom": 36,
+        "columns_desktop": 4,
+        "columns_mobile": "2"
+      },
+      "type": "main-collection-product-grid"
+    },
+    "banner": {
+      "settings": {
+        "show_collection_image": false,
+        "show_collection_description": true,
+        "color_scheme": "scheme-1"
+      },
+      "disabled": true,
+      "type": "main-collection-banner"
+    },
+    "761767135788882979": {
+      "settings": {
+        "include_margins": true
+      },
+      "blocks": {
+        "d74982b5-2527-4e64-9dc0-0c646182c796": {
+          "settings": {},
+          "disabled": true,
+          "type": "shopify://apps/dadao-product-reviews/blocks/featured-reviews/3cc4253a-05eb-4164-8778-b76d83ce00cc"
+        }
+      },
+      "disabled": true,
+      "type": "apps",
+      "block_order": [
+        "d74982b5-2527-4e64-9dc0-0c646182c796"
+      ]
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "761767135788882979"
   ]
 }

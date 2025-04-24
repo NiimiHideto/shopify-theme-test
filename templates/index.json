@@ -34,7 +34,7 @@
           "type": "slide",
           "settings": {
             "image_overlay_opacity": 0,
-            "heading": "画像スライドですよ",
+            "heading": "画像スライド",
             "heading_size": "h1",
             "subheading": "ブランドのストーリーを画像で伝える",
             "button_label": "ボタンのラベル",
@@ -152,12 +152,30 @@
         "mobile_content_alignment": "center",
         "show_text_below": true
       }
+    },
+    "307766297891096650": {
+      "type": "apps",
+      "blocks": {
+        "bbf7e7bb-0cb0-467d-89f2-c4173bc5b630": {
+          "type": "shopify://apps/dadao-product-reviews/blocks/featured-reviews/3cc4253a-05eb-4164-8778-b76d83ce00cc",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "bbf7e7bb-0cb0-467d-89f2-c4173bc5b630"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "hero-slideshow",
     "all-products",
     "collection-list",
-    "image-banner"
+    "image-banner",
+    "307766297891096650"
   ]
 }
